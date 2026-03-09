@@ -13,9 +13,9 @@ const nextConfig: NextConfig = {
    * IMPORTANT: Set this to your repository name.
    * If your repo is https://github.com/AmitNaganuri/my-portfolio,
    * then basePath should be '/my-portfolio'.
-   * If you are using a custom domain, you can remove this.
+   * If you are using a custom domain, you can remove this or set to ''.
    */
-  basePath: '/studio', 
+  basePath: '/REPLACE_WITH_YOUR_REPO_NAME', 
   
   images: {
     unoptimized: true,
@@ -40,6 +40,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  /* trailingSlash ensures that each route gets its own index.html file, which works better with GitHub Pages */
   trailingSlash: true,
   typescript: {
     ignoreBuildErrors: true,
