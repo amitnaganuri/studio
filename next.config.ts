@@ -2,11 +2,13 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* 
-     NOTE: GitHub Pages is a static hosting service. 
-     Next.js Server Actions (like your AI Polisher) will NOT work on GitHub Pages.
-     To deploy there, we must use static export.
+     GitHub Pages is a static hosting service. 
+     Next.js Server Actions will NOT work here.
   */
   output: 'export',
+  // If your repository is NOT at <username>.github.io, but at <username>.github.io/<repo-name>/,
+  // you MUST set basePath to '/<repo-name>' below.
+  // basePath: '/your-repo-name',
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -30,7 +32,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Ensure links work correctly on static hosts by adding trailing slashes
   trailingSlash: true,
   typescript: {
     ignoreBuildErrors: true,
