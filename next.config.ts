@@ -1,3 +1,4 @@
+
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
@@ -7,9 +8,15 @@ const nextConfig: NextConfig = {
      Output 'export' generates a static 'out' folder.
   */
   output: 'export',
-  // IMPORTANT: Set this to your repository name if not using a custom domain.
-  // Example: basePath: '/my-portfolio-repo',
+  
+  /**
+   * IMPORTANT: Set this to your repository name.
+   * If your repo is https://github.com/AmitNaganuri/my-portfolio,
+   * then basePath should be '/my-portfolio'.
+   * If you are using a custom domain, you can remove this.
+   */
   basePath: '/studio', 
+  
   images: {
     unoptimized: true,
     remotePatterns: [
