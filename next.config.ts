@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   output: 'export',
   // If your repository is NOT at <username>.github.io, but at <username>.github.io/<repo-name>/,
   // you MUST set basePath to '/<repo-name>' below.
-  // basePath: '/your-repo-name',
+  basePath: '/studio',
   images: {
     unoptimized: true,
     remotePatterns: [
