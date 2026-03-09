@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
   output: 'export',
   // IMPORTANT: Set this to your repository name if not using a custom domain.
   // Example: basePath: '/my-portfolio-repo',
-  // basePath: '', 
+  basePath: '/studio', 
   images: {
     unoptimized: true,
     remotePatterns: [
