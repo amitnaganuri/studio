@@ -11,9 +11,7 @@ const nextConfig: NextConfig = {
   
   /**
    * IMPORTANT: Set this to your repository name.
-   * If your repo is https://github.com/AmitNaganuri/my-portfolio,
-   * then basePath should be '/my-portfolio'.
-   * If you are using a custom domain, you can remove this or set to ''.
+   * Based on your screenshot, your repo is 'studio'.
    */
   basePath: '/studio', 
   
