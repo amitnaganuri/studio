@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
    * then basePath should be '/my-portfolio'.
    * If you are using a custom domain, you can remove this or set to ''.
    */
-  basePath: '/REPLACE_WITH_YOUR_REPO_NAME', 
+  basePath: '/studio', 
   
   images: {
     unoptimized: true,
