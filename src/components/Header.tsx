@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 
 export default function Header() {
   const scrollTo = (id: string) => {
@@ -19,9 +18,6 @@ export default function Header() {
         <button onClick={() => scrollTo('skills')} className="hover:text-primary transition-colors">Skills</button>
         <button onClick={() => scrollTo('projects')} className="hover:text-primary transition-colors">Projects</button>
         <button onClick={() => scrollTo('contact')} className="hover:text-primary transition-colors">Contact</button>
-        <Button variant="outline" onClick={() => window.open('/admin/polisher', '_blank')} className="border-primary/20 hover:bg-primary/10">
-          Polisher Tool
-        </Button>
       </nav>
     </header>
   );

@@ -4,11 +4,12 @@ const nextConfig: NextConfig = {
   /* 
      GitHub Pages is a static hosting service. 
      Next.js Server Actions will NOT work here.
+     Output 'export' generates a static 'out' folder.
   */
   output: 'export',
-  // If your repository is NOT at <username>.github.io, but at <username>.github.io/<repo-name>/,
-  // you MUST set basePath to '/<repo-name>' below.
-  basePath: '/studio',
+  // IMPORTANT: Set this to your repository name if not using a custom domain.
+  // Example: basePath: '/my-portfolio-repo',
+  // basePath: '', 
   images: {
     unoptimized: true,
     remotePatterns: [
